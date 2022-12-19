@@ -1,0 +1,45 @@
+<resources>
+    <string name="app_name">Jewel</string>
+    <string name="hintclient">Enter Client Name</string>
+    <string name="next">Continue</string>
+    <string name="jewel">Jewel</string>
+    <string name="s_no">S.No</string>
+    <string name="type">type</string>
+    <string name="weight_poly">wpp</string>
+    <string name="quality">quality</string>
+    <string name="number">Number</string>
+    <string name="weight">weight</string>
+    <string name="labour_piece">lpp</string>
+    <string name="select_type">Select Type</string>
+    <string name="enter_weight_of_an_item">Enter weight of an item</string>
+    <string name="enter_weight_per_polythene">Enter weight per polythene</string>
+    <string name="enter_number_of_pieces">Enter number of pieces</string>
+    <string name="enter_labour_per_piece">Enter labour per piece</string>
+    <string name="enter_quality_of_an_item">Enter quality of an item</string>
+    <string name="enter_gold_price">Enter gold price</string>
+    <string name="enter_silver_price">Enter silver price</string>
+    <string name="fine">fine</string>
+    <string name="price">Price</string>
+    <string name="Update">Update</string>
+    <string name="add_sold_item">Add Sold Item</string>
+    <string name="add_metal_received">Add Metal Received</string>
+    <string name="add_cash_received">Add Cash Received</string>
+    <string name="calculate">Calculate</string>
+    <string name="total_amount">Total Amount</string>
+    <string name="gold_fine">Gold fine</string>
+    <string name="silver_fine">Silver fine</string>
+    <string name="value">Value</string>
+    <string name="amount">Amount</string>
+    <string name="cash_received">Cash Received</string>
+    <string name="metal_received">Metal Received</string>
+    <string name="enter_amount_received">Enter Amount Received</string>
+    <string name="enter_valued_price">Enter Valued Price</string>
+    <string-array name="types">
+        <item>gold</item>
+        <item>silver</item>
+    </string-array>
+    <string-array name="labunit">
+        <item>/Kg</item>
+        <item>/piece</item>
+    </string-array>
+</resources>

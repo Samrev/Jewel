@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <LinearLayout
+        android:id="@+id/spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_type"
+            android:textStyle="bold"
+            >
+        </TextView>
+        <Spinner
+            android:id="@+id/type_spinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/types">
+        </Spinner>
+    </LinearLayout>
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_amount_received"
+        android:textStyle="bold"
+        android:layout_below="@+id/spinner"
+        android:inputType="numberDecimal">
+    </EditText>
+    <EditText
+        android:id="@+id/value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_valued_price"
+        android:textStyle="bold"
+        android:layout_below="@+id/amount"
+        android:inputType="numberDecimal">
+    </EditText>
+
+    <Button
+        android:id="@id/btadd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:textStyle="bold"
+        android:backgroundTint="#AFA2A2"
+        android:layout_below="@+id/value"
+        android:layout_centerHorizontal="true"
+        />
+
+
+</RelativeLayout>

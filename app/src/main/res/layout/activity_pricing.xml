@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#4B97908E"
+    tools:context=".Pricing"
+    >
+
+    <EditText
+        android:id="@+id/goldPriceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_gold_price"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_centerInParent="true"
+        android:inputType="numberDecimal"
+         />
+    <EditText
+        android:id="@+id/silverPriceId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_silver_price"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_below="@+id/goldPriceId"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true"
+        android:inputType="numberDecimal"/>
+
+    <Button
+        android:id="@+id/btPrice"
+        style="@style/ContinueButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/silverPriceId"
+        android:layout_marginTop="30sp"
+        android:layout_centerHorizontal="true"
+        />
+</RelativeLayout>

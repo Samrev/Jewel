@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Selling"
+    android:background="#4B97908E"
+    >
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <HorizontalScrollView
+                android:id="@+id/recyclescroll"
+                android:layout_width="match_parent"
+                android:layout_height="450sp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/itemids"
+                        android:layout_width="match_parent"
+                        android:layout_height="400sp"
+                        android:layout_below="@+id/cardid"
+                        />
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/cardid"
+                        android:layout_width="match_parent"
+                        android:layout_height="40sp"
+                        app:cardElevation="30sp"
+                        >
+
+                        <GridLayout
+                            android:id="@+id/item"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:columnCount="9">
+                            <TextView
+                                android:id="@+id/Serialid"
+                                android:layout_width="50sp"
+                                android:layout_height="wrap_content"
+                                android:textAlignment="center"
+                                android:text="@string/s_no"
+                                android:textSize="20sp"
+                                android:textStyle="bold"/>
+                            <TextView
+                                android:id="@+id/type"
+                                android:layout_width="60sp"
+                                android:layout_height="match_parent"
+                                android:text="@string/type"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginStart="10sp"
+                                />
+                            <TextView
+                                android:id="@+id/weight"
+                                android:layout_width="80sp"
+                                android:layout_height="match_parent"
+                                android:text="@string/weight"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginStart="10sp"
+                                />
+                            <TextView
+                                android:id="@+id/weight_poly"
+                                android:layout_width="70sp"
+                                android:layout_height="match_parent"
+                                android:text="@string/weight_poly"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginStart="10sp"
+                                />
+                            <TextView
+                                android:id="@+id/quality"
+                                android:layout_width="80sp"
+                                android:layout_height="match_parent"
+                                android:text="@string/quality"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginStart="10sp"
+                                />
+                            <TextView
+                                android:id="@+id/num"
+                                android:layout_width="80sp"
+                                android:layout_height="match_parent"
+                                android:text="@string/number"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginStart="10sp"
+                                />
+                            <TextView
+                                android:id="@+id/labour"
+                                android:layout_width="100sp"
+                                android:layout_height="match_parent"
+                                android:text="@string/labour_piece"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginStart="10sp"
+                                />
+                            <TextView
+                                android:id="@+id/fine"
+                                android:layout_width="120sp"
+                                android:layout_height="match_parent"
+                                android:text="@string/fine"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginStart="10sp"
+                                />
+                            <TextView
+                                android:id="@+id/Price"
+                                android:layout_width="120sp"
+                                android:layout_height="match_parent"
+                                android:text="@string/price"
+                                android:textSize="20sp"
+                                android:textStyle="bold"
+                                android:textAlignment="center"
+                                android:layout_marginStart="10sp"
+                                />
+                        </GridLayout>
+                    </androidx.cardview.widget.CardView>
+                </RelativeLayout>
+
+
+            </HorizontalScrollView>
+
+
+
+
+
+
+
+            <HorizontalScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btadd">
+                <GridLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:rowCount="2"
+                    >
+                    <TextView
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/gold_fine"
+                        android:textSize="20sp"
+                        android:padding="10sp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/silver_fine"
+                        android:textSize="20sp"
+                        android:padding="10sp">
+                    </TextView>
+                    <TextView
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/total_amount"
+                        android:textSize="20sp"
+                        android:padding="10sp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/calgfine"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:text="0.0000g"
+                        android:textSize="20sp"
+                        android:padding="10sp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/calsfine"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:text="0.0000g"
+                        android:textSize="20sp"
+                        android:padding="10sp">
+                    </TextView>
+                    <TextView
+                        android:id="@+id/calamount"
+                        android:layout_width="150sp"
+                        android:layout_height="wrap_content"
+                        android:text="Rs 0.0000"
+                        android:textSize="20sp"
+                        android:padding="10sp">
+                    </TextView>
+                </GridLayout>
+            </HorizontalScrollView>
+
+
+            <Button
+                android:id="@+id/btcont"
+                android:layout_width="160sp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#7F8168"
+                android:text="@string/next"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btcal"
+                android:layout_width="160sp"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/btcont"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#7F8168"
+                android:text="@string/calculate"
+                android:textStyle="bold" />
+            <Button
+                android:id="@+id/btadd"
+                android:layout_width="160sp"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/btcal"
+                android:layout_alignParentEnd="true"
+                android:backgroundTint="#7F8168"
+                android:text="@string/add_sold_item"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </ScrollView>
+
+
+</RelativeLayout>
