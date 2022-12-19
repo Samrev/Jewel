@@ -24,21 +24,21 @@
         </Spinner>
     </LinearLayout>
     <EditText
-        android:id="@+id/amount"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:hint="@string/enter_amount_received"
-        android:textStyle="bold"
-        android:layout_below="@+id/spinner"
-        android:inputType="numberDecimal">
-    </EditText>
-    <EditText
         android:id="@+id/value"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/enter_valued_price"
         android:textStyle="bold"
-        android:layout_below="@+id/amount"
+        android:inputType="numberDecimal"
+        android:layout_below="@+id/spinner">
+    </EditText>
+    <EditText
+        android:id="@+id/amount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/enter_amount_received"
+        android:textStyle="bold"
+        android:layout_below="@+id/value"
         android:inputType="numberDecimal">
     </EditText>
 
@@ -49,7 +49,7 @@
         android:text="Add"
         android:textStyle="bold"
         android:backgroundTint="#AFA2A2"
-        android:layout_below="@+id/value"
+        android:layout_below="@+id/amount"
         android:layout_centerHorizontal="true"
         />
 

@@ -19,20 +19,20 @@ class Price{
     }
 }
 class CashPayment{
-    double Amount,Value;
+    double amount,value;
     String type;
-    CashPayment(double Amount , double Value,String type){
-        this.Amount = Amount;
-        this.Value = Value;
+    CashPayment(double amount , double value,String type){
+        this.amount = amount;
+        this.value = value;
         this.type = type;
     }
 
     public double getfine(){
         if(type.equals("gold")){
-            return (10.00 * Amount)/Value;
+            return (10.00 * amount)/value;
         }
         else if(type.equals("silver")){
-            return (1000.00*Amount)/Value;
+            return (1000.00*amount)/value;
         }
         return -1;
     }
@@ -48,7 +48,7 @@ class MetalPayment{
     }
 
     public double getfine(){
-        return weight*quality;
+        return weight*quality*0.01;
     }
 }
 

@@ -118,7 +118,35 @@ public class Receiving extends AppCompatActivity {
 
             }
         });
+        Button btcal = findViewById(R.id.btcal);
+        TextView calgfine = findViewById(R.id.calgfine);
+        TextView calsfine = findViewById(R.id.calsfine);
+        btcal.setOnClickListener(new View.OnClickListener() {
 
+            @Override
+            public void onClick(View view) {
+                double gp =0,sp=0;
+                String gold = "gold";
+                for(CashPayment p : cpay){
+                    if(gold.equals(p.type)){
+                        gp += p.getfine();
+                    }
+                    else{
+                        sp += p.getfine();
+                    }
+                }
+                for(MetalPayment p : mpay){
+                    if(gold.equals(p.type)){
+                        gp += p.getfine();
+                    }
+                    else{
+                        sp += p.getfine();
+                    }
+                }
+                calgfine.setText(String.format("%.3f",gp) + "g");
+                calsfine.setText(String.format("%.3f",sp) + "g");
+            }
+        });
 
     }
 }
